@@ -25,7 +25,7 @@ class Program
             {
                 // SMTP sunucu bilgilerini ve kimlik doğrulama bilgilerinizi girin
                 await client.ConnectAsync("mail.server.com", 587, false);    // SERVER DEĞİŞTİR FACEANDBRAST
-                await client.AuthenticateAsync("deneme@kaansari.com.tr", "deneme123.");  //// GÖNDEREN MAİL ŞİFRE
+                await client.AuthenticateAsync("deneme@denme1.com.tr", "deneme123.");  //// GÖNDEREN MAİL ŞİFRE
                 await client.SendAsync(emailMessage);
                 await client.DisconnectAsync(true);
 
